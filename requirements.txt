@@ -1,23 +1,21 @@
 # CrisisSignal — requirements.txt
+# Install: pip install -r requirements.txt
+#
+# Note: TensorFlow is NOT required.
+# The ML backend uses PyTorch (Python 3.13 compatible).
 
-# Core ML
-tensorflow>=2.13.0
-scikit-learn>=1.3.0
-numpy>=1.24.0
-pandas>=2.0.0
+# ── Core ML ───────────────────────────────────────────────────
+torch>=2.6.0                  # LSTM Autoencoder training + TorchScript export
+scikit-learn>=1.3.0           # MinMaxScaler, train_test_split, metrics
+numpy>=1.24.0                 # Array operations
+pandas>=2.0.0                 # Sensor data loading + resampling
 
-# Explainability
-shap>=0.43.0
+# ── Visualization & App ───────────────────────────────────────
+streamlit>=1.30.0             # Interactive demo dashboard
+plotly>=5.18.0                # Drift charts + SHAP-style bar charts
+matplotlib>=3.7.0             # Notebook plots
+seaborn>=0.12.0               # Notebook heatmaps / correlation plots
 
-# Visualization & App
-streamlit>=1.30.0
-plotly>=5.18.0
-matplotlib>=3.7.0
-seaborn>=0.12.0
-
-# Notebook
+# ── Notebook ──────────────────────────────────────────────────
 jupyter>=1.0.0
 ipykernel>=6.0.0
-
-# Utilities
-python-pptx>=0.6.21

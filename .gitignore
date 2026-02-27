@@ -90,3 +90,6 @@ logs/
 *.tmp
 slides_out.txt
 slides_extract.py
+!models/crisissignal_v1.ptl
+!models/threshold.npy
+!models/baseline_lstm_arch.json

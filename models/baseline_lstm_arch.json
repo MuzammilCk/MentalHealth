@@ -1,0 +1,7 @@
+{
+  "n_features": 5,
+  "hidden_size": 64,
+  "latent_size": 32,
+  "dropout": 0.0,
+  "timesteps": 30
+}
